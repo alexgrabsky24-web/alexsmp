@@ -1,0 +1,376 @@
+<!DOCTYPE html><html class="dark" lang="ru"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ALEX SMP - Премиальная Трихопигментация</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Serif:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e2e2e2",
+                        "inverse-surface": "#e2e2e2",
+                        "outline": "#8e9192",
+                        "on-primary-container": "#7b7979",
+                        "on-tertiary": "#303030",
+                        "surface-tint": "#c9c6c5",
+                        "secondary-fixed": "#ffdea5",
+                        "on-tertiary-container": "#7a7979",
+                        "tertiary-container": "#0a0a0a",
+                        "on-background": "#e2e2e2",
+                        "on-secondary-fixed": "#261900",
+                        "surface-variant": "#333535",
+                        "primary-container": "#0a0a0a",
+                        "outline-variant": "#444748",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-primary": "#313030",
+                        "background": "#121414",
+                        "primary": "#c9c6c5",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-container": "#1e2020",
+                        "surface-container-low": "#1a1c1c",
+                        "surface-container-lowest": "#0d0f0f",
+                        "surface": "#121414",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "surface-dim": "#121414",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "inverse-primary": "#5f5e5e",
+                        "on-surface-variant": "#c4c7c7",
+                        "error-container": "#93000a",
+                        "on-secondary": "#412d00",
+                        "secondary": "#e9c176",
+                        "on-secondary-container": "#dab36a",
+                        "on-primary-fixed-variant": "#474646",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-container-highest": "#333535",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "secondary-container": "#604403",
+                        "surface-container-high": "#282a2b",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "on-error": "#690005",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-bright": "#38393a",
+                        "tertiary": "#c8c6c5",
+                        "inverse-on-surface": "#2f3131",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "section-padding": "120px",
+                        "gutter": "32px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg": ["Noto Serif"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Noto Serif"],
+                        "display-xl": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary/20 selection:text-secondary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0A0A0A]/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1280px] mx-auto">
+<div class="text-xl font-bold tracking-[0.3em] text-white">
+                ALEX SMP
+            </div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-8 items-center">
+<li class=""><br></li>
+<li class=""><br></li>
+<li class=""><br></li>
+<li class=""><br></li>
+<li class=""><br></li>
+</ul>
+<button class="hidden md:inline-flex px-6 py-3 border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary transition-all duration-300 font-label-sm text-label-sm uppercase">записаться</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-primary-container">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="A close-up view of a professional scalp micropigmentation procedure being performed by a specialist wearing black gloves. The focus is on the precision tool applying pigment to a client's scalp, illustrating the meticulous nature of the process. The lighting is bright and clinical, emphasizing safety and cleanliness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFO_YbvK7qzJHf1ChD26BlAWC1QUb3YGOpEy9RfVMRY2zzMZ7V928j_w5m62UDEoPUPMRFW2JwO0l2g_ftgV48I70lrQ_mtJjchq8PwhN3pYMG3QQdF9zd3w24ztYxmRc5s2wkfUT3dDjdHHNE45sHhCyaLLAj9b1WhbyXmodzq0_yVn1yh0fONo385DnK1VD9I_fqQ4TGOsGTxavtG3XkNDcDy8gMiSohxDCPAUqcicM5q_I3vSA__55t8dylscUOPKkMniUJ1oC9">
+<div class="absolute inset-0 bg-gradient-to-b from-primary-container/80 via-primary-container/90 to-background"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-gutter flex flex-col items-center text-center">
+<!-- Logo Placement -->
+<div class="mb-12">
+<img class="h-24 md:h-32 w-auto object-contain drop-shadow-2xl opacity-90" data-alt="A minimalist, high-end logo design for ALEX SMP, featuring sharp, modern typography and a subtle geometric mark. The logo is rendered in muted gold against a stark obsidian black background. The style is quiet luxury, reflecting clinical precision and an exclusive, premium medical aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6CwtQCwZAv-rmqgyHoXVM2aEl8kUaHzyFX6Ehw4fDLyIClvXC805a-BmyHGZYd-usxP8Yms3LGzYmNVc9_nAIAEK75nl89DtkNkFhTkfpD6IS70JXuLQfBFK2iw_1IBZB3NuTNxjUZg7_vSPCbvv8PVkeG11AcLwRXOPjRsN_XgsK8YFxvF_0rRhdpG1CC8YZ88nJod5Sj_tJDNIwxZ4Ep1RA5pud63RY8Ax3AWu38iOASLOR8QGVCBLcIEawWnfoZWRwNWAzVrg1">
+</div>
+<h1 class="font-display-xl text-display-xl text-on-surface mb-8 max-w-4xl mx-auto drop-shadow-lg">
+                    Искусство восстановления уверенности.<br>
+<span class="text-secondary italic font-light">Профессиональная трихопигментация.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                    Естественный результат, который невозможно отличить от настоящих волос. Премиальный сервис и индивидуальный подход к каждому клиенту.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="px-8 py-4 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed transition-colors duration-300">
+                        Записаться на бесплатную консультацию
+                    </button>
+<button class="px-8 py-4 border border-outline text-on-surface font-label-sm text-label-sm uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all duration-300">
+                        Посмотреть работы
+                    </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-outline animate-bounce">
+<span class="font-label-sm text-label-sm">SCROLL</span>
+<span class="material-symbols-outlined">arrow_downward</span>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-section-padding px-gutter bg-surface-container-low" id="benefits">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Преимущества SMP</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Почему трихопигментация — лучший выбор для решения проблемы потери волос.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 border border-white/5 bg-surface rounded-xl hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">verified_user</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Безопасность</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Процедура проводится с использованием гипоаллергенных пигментов и одноразовых стерильных инструментов, что гарантирует полную безопасность для здоровья.</p>
+</div>
+<div class="p-8 border border-white/5 bg-surface rounded-xl hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">spa</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Естественность</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Мастерство создания микроточек, имитирующих волосяные фолликулы, обеспечивает результат, который выглядит абсолютно естественно вблизи и издалека.</p>
+</div>
+<div class="p-8 border border-white/5 bg-surface rounded-xl hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">hourglass_top</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Долговечность</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Результат сохраняется на долгие годы. Спустя время может потребоваться лишь легкая коррекция для обновления насыщенности цвета.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Who is it for Section -->
+<section class="py-section-padding px-gutter bg-surface-container" id="services">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<img class="w-full h-auto rounded-xl object-cover shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="A portrait of a confident man with a clearly defined hairline and short stubble, showcasing the natural-looking results of scalp micropigmentation. The lighting is dramatic, highlighting his features against a dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ_7MJODAvHqLjmY4CeO5ADxRKb0CC-Bucr6hhzs0CWuBj_nyjRNLXYAbzgDtLIAvOsk017iGnFv76TAS4F_e3T2qxpcumDYMKHFjnaX4BOrbg0UiJCOuf_mvxP1NqBFfilZssEjqIaD5wE7beS0nuE4OLR1D9kUEDEQFz1ykNYXR7xIgk26Phs0kUNBZxFjVe6h0QNbSr7KhBSmhZlg6H1SIxgG0qYszhWbSPbuAIFoD43hy9Hl_5Xjpq8bC2-fsG2h2g-gMYAPsT">
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Кому подходит SMP?</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Поредение волос</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Визуальное увеличение густоты волос при их истончении и начальных стадиях облысения.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Полное или частичное облысение</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Создание эффекта коротко стриженных волос при любой стадии алопеции.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Шрамы на голове</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Эффективная маскировка шрамов после пересадки волос (FUE/FUT), травм или операций.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Улучшение плотности</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Добавление визуальной плотности существующим волосам для более густого вида.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Results Section -->
+<section class="py-section-padding px-gutter bg-background" id="gallery">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Результаты клиентов</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Оцените качество и естественность нашей работы. Фотографии до и сразу после процедуры.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Image 1 -->
+<div class="group relative overflow-hidden rounded-xl border border-white/5 hover:border-secondary/30 transition-all duration-500 bg-surface">
+<img alt="Before and after comparison of scalp micropigmentation showing dramatic hair restoration results on a male client." class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida/ADBb0uittE_hFUF11qXKXfsHiyB2rFhdI-4vbGpSopGpPDrRkYwagjzaNEPc0fh_z-kJKBbdu5XSXUxErZVC1td0RMPL-iIQbNAmY5EKY1k4Di8ZJs9ICeOhIaXXW4A9-3rxPZAtoAugX7tXdtWvm0lybwRJXdbVzz1nfoEm3jji3ltD4aScaiCgEk5lXb6ZXZRM_CJ-uS5M8-dEJWwe72TtlkErTZk9-VDW37DPp4s6TpC6SVXM7d_qBObadgjwf_Lsvod6gUyXfg6MEPk">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest bg-surface/80 px-6 py-3 rounded-full border border-secondary/30 backdrop-blur-md">До / После</span>
+</div>
+</div>
+<!-- Image 2 -->
+<div class="group relative overflow-hidden rounded-xl border border-white/5 hover:border-secondary/30 transition-all duration-500 bg-surface">
+<img alt="Before and after comparison of scalp micropigmentation showing natural hair density restoration." class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida/ADBb0ugqFaInO03GjBYl4RxL4Xf8dYe-K4GDZwacNzjsDETTeItuCNMS5o_AOmuEWUEacA-VRLLyjcVR82UQeiKMv93uIocexe4dTxnL7otVpCUvni1VYPNjpx84RbG9tq90HcmfLEiFAjgVlavB0Q0yDT4fdf6EauZ0GenmNLGANx67Ly54K5dFsWweEWE5KbRtXtZnJYY477ylqdVSxG6MTgXvsj9e0QJmDzMu1xhnevTVJO5jTOTNSlemWrxUXlrWrg-61d-sLV3vJ5c">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest bg-surface/80 px-6 py-3 rounded-full border border-secondary/30 backdrop-blur-md">До / После</span>
+</div>
+</div>
+<!-- Image 3 -->
+<div class="group relative overflow-hidden rounded-xl border border-white/5 hover:border-secondary/30 transition-all duration-500 bg-surface">
+<img alt="Hyper-realistic split-screen comparison image of a man's head for scalp micropigmentation (SMP) showing before and after results." class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida/ADBb0uhFbkaukfdSmhIY8RjRVJcdo8oxuacXePwxRWHrFG08OJHyu-XRlG_WBHQ_dWcfNHRex3HhYqJ8Rm9LFbc0O82bF512gXjP1ao3XfhgmVE3xRKB_QUDXCPDLV_0mvijjb-aVla8G_jyG09H04K6ez1fQyoWxWMoO12kgxlkdxn1GoAlo6J-gjxWkye1kM2Yk6qatNIXLdZ0tV1ArpiIoaNbsnsr7rYz73E5JfueIFRHW_WujMVPM25NziguB3X26EgY5vhUK2znPSY">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest bg-surface/80 px-6 py-3 rounded-full border border-secondary/30 backdrop-blur-md">До / После</span>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="px-8 py-4 border border-outline text-on-surface font-label-sm text-label-sm uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all duration-300">
+                    Смотреть больше работ
+                </button>
+</div>
+</div>
+</section>
+<section class="py-section-padding px-gutter bg-surface-container-lowest" id="process">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Путь к результату за 4 шага</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Поэтапный процесс создания вашего нового образа с вниманием к каждой детали.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Step 1 -->
+<div class="relative p-8 border border-white/5 bg-surface-container rounded-xl hover:border-secondary/30 transition-all duration-300 group">
+<div class="text-4xl font-display-xl text-secondary/20 group-hover:text-secondary/40 transition-colors mb-4">01</div>
+<h3 class="font-headline-md text-xl text-on-surface mb-3">Консультация</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Обсуждаем желаемый результат, форму линии роста волос и подбираем идеальный оттенок пигмента.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative p-8 border border-white/5 bg-surface-container rounded-xl hover:border-secondary/30 transition-all duration-300 group">
+<div class="text-4xl font-display-xl text-secondary/20 group-hover:text-secondary/40 transition-colors mb-4">02</div>
+<h3 class="font-headline-md text-xl text-on-surface mb-3">Подготовка</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Создаем эскиз будущей прически, учитывая анатомические особенности лица для максимальной естественности.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative p-8 border border-white/5 bg-surface-container rounded-xl hover:border-secondary/30 transition-all duration-300 group">
+<div class="text-4xl font-display-xl text-secondary/20 group-hover:text-secondary/40 transition-colors mb-4">03</div>
+<h3 class="font-headline-md text-xl text-on-surface mb-3">Процедура</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Бережное введение пигмента. Используем стерильное оборудование и премиальные материалы.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative p-8 border border-white/5 bg-surface-container rounded-xl hover:border-secondary/30 transition-all duration-300 group">
+<div class="text-4xl font-display-xl text-secondary/20 group-hover:text-secondary/40 transition-colors mb-4">04</div>
+<h3 class="font-headline-md text-xl text-on-surface mb-3">Контроль и коррекция</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Оценка заживления и финальные штрихи через несколько недель для идеальной плотности.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why SMP Section -->
+<section class="py-section-padding px-gutter bg-surface-container-low" id="why-smp">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Почему трихопигментация — лучший выбор</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Преимущества перед пересадкой волос и медикаментозным лечением.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 border border-white/5 bg-surface rounded-xl hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">bolt</span>
+<h3 class="font-headline-md text-xl text-on-surface mb-4">Мгновенный эффект</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Визуальное преображение и густота волос заметны уже после первого сеанса.</p>
+</div>
+<div class="p-8 border border-white/5 bg-surface rounded-xl hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">healing</span>
+<h3 class="font-headline-md text-xl text-on-surface mb-4">Без хирургии</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Никаких шрамов, длительного периода реабилитации и болезненных ощущений.</p>
+</div>
+<div class="p-8 border border-white/5 bg-surface rounded-xl hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">architecture</span>
+<h3 class="font-headline-md text-xl text-on-surface mb-4">Предсказуемый результат</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Полный контроль над формой линии роста волос, оттенком и желаемой плотностью.</p>
+</div>
+<div class="p-8 border border-white/5 bg-surface rounded-xl hover:border-secondary/30 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">savings</span>
+<h3 class="font-headline-md text-xl text-on-surface mb-4">Экономичность</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Единоразовая инвестиция в свой имидж, дарующая уверенность на долгие годы.</p>
+</div>
+</div>
+</div>
+</section><section class="py-section-padding px-gutter bg-surface-container-high" id="lead-form">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Записаться на консультацию</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Оставьте свои данные, и мы свяжемся с вами для подбора удобного времени встречи.</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest" for="name">Имя</label>
+<input class="bg-surface-container border-outline/30 text-on-surface focus:border-secondary focus:ring-secondary/20 transition-all duration-300 py-4 px-6 rounded-none font-body-md" id="name" placeholder="Ваше имя" type="text">
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest" for="phone">Номер телефона</label>
+<input class="bg-surface-container border-outline/30 text-on-surface focus:border-secondary focus:ring-secondary/20 transition-all duration-300 py-4 px-6 rounded-none font-body-md" id="phone" placeholder="+7 (___) ___-__-__" type="tel">
+</div>
+<div class="md:col-span-2 flex justify-center mt-4">
+<button class="px-12 py-5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-[0.2em] hover:bg-secondary-fixed transition-all duration-300 shadow-lg" type="submit">
+          Отправить заявку
+        </button>
+</div>
+</form>
+<p class="text-center font-label-sm text-[10px] text-on-surface-variant/50 mt-8 uppercase tracking-widest">
+      Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+    </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 border-t border-white/5 bg-[#0A0A0A] relative z-10">
+<div class="flex flex-col items-center gap-8 max-w-[1280px] mx-auto px-8">
+<div class="text-lg font-bold tracking-widest text-white">
+                    ALEX SMP
+                </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-noto-serif text-[10px] tracking-widest uppercase text-white/40 hover:text-[#B8860B] transition-colors" href="#">Privacy Policy</a>
+<a class="font-noto-serif text-[10px] tracking-widest uppercase text-white/40 hover:text-[#B8860B] transition-colors" href="#">Terms of Service</a>
+<a class="font-noto-serif text-[10px] tracking-widest uppercase text-white/40 hover:text-[#B8860B] transition-colors" href="#">Instagram</a>
+<a class="font-noto-serif text-[10px] tracking-widest uppercase text-white/40 hover:text-[#B8860B] transition-colors" href="#">Contact</a>
+</div>
+<p class="font-noto-serif text-[10px] tracking-widest uppercase text-white/40 mt-4 text-center">
+                    © 2024 ALEX SMP. METICULOUS ARTISTRY.
+                </p>
+</div>
+</footer>
+
+
+</body></html>
